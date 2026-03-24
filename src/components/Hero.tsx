@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="inline-block border-2 border-black bg-amber-200 px-3 py-1 text-sm font-bold shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] mb-6 relative z-10">
         ✦ VS Code Extension
       </div>
-      <h1 className="text-7xl font-bold text-black leading-[0.9] mb-10 relative z-10">
+      <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-black leading-[0.9] mb-10 relative z-10">
         Agentic software<br />
         <span className="text-cyan-400">engineering</span>
       </h1>
@@ -38,8 +38,8 @@ export default function Hero() {
           View on GitHub
         </a>
       </div>
-      <img src="/sparkle-green.svg" alt="" className="absolute -top-10 left-0 md:left-12 lg:left-10 w-20 h-20" />
-      <img src="/sparkle-red.svg" alt="" className="absolute top-20 right-0 md:right-12 lg:right-14 w-20 h-20" />
+      <img src="/sparkle-green.svg" alt="" className="absolute -top-10 left-0 md:left-12 lg:left-10 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
+      <img src="/sparkle-red.svg" alt="" className="absolute top-20 right-0 md:right-12 lg:right-14 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
     </div>
   );
 }

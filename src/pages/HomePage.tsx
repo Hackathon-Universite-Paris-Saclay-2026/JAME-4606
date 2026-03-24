@@ -63,7 +63,7 @@ export default function HomePage() {
 
         {/* Features */}
         <section id="features" className="max-w-4xl mx-auto pb-20">
-          <h2 className="text-4xl font-black text-black text-center mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-black text-center mb-3">
             Everything you need to ship faster
           </h2>
           <p className="text-gray-600 text-center mb-12 text-lg">
@@ -85,7 +85,7 @@ export default function HomePage() {
 
         {/* How it works */}
         <section id="how-it-works" className="max-w-4xl mx-auto pb-20">
-          <h2 className="text-4xl font-black text-black text-center mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-black text-center mb-3">
             How it works
           </h2>
           <p className="text-gray-600 text-center mb-12 text-lg">
@@ -109,8 +109,8 @@ export default function HomePage() {
 
         {/* Bottom CTA */}
         <section className="max-w-4xl mx-auto pb-20">
-          <div className="border-2 border-black bg-violet-200 p-12 text-center shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-            <h2 className="text-4xl font-black text-black mb-4">Ready to build?</h2>
+          <div className="border-2 border-black bg-violet-200 p-6 sm:p-8 md:p-12 text-center shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-black mb-4">Ready to build?</h2>
             <p className="text-black text-lg mb-8 max-w-xl mx-auto">
               Install the JAMEAgents extension and let your AI crew handle the heavy lifting.
             </p>
@@ -118,7 +118,7 @@ export default function HomePage() {
               href="https://marketplace.visualstudio.com/items?itemName=JAME.jame-agents"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-black text-white border-2 border-black font-bold px-8 py-4 shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.5)] hover:translate-x-[-2px] hover:translate-y-[-2px] active:translate-x-[2px] active:translate-y-[2px] transition-all text-lg"
+              className="inline-flex items-center gap-2 bg-black text-white border-2 border-black font-bold px-5 py-3 sm:px-8 sm:py-4 shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.5)] hover:translate-x-[-2px] hover:translate-y-[-2px] active:translate-x-[2px] active:translate-y-[2px] transition-all text-base sm:text-lg"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
