@@ -6,53 +6,6 @@ interface WorkspaceFilesProps {
   onOpenContextModal: () => void;
 }
 
-function buildTree(files: Record<string, string>): TreeNode[] {
-  const tree: Record<string, TreeNode> = {};
-
-  Object.keys(files).forEach((filePath) => {
-    const parts = filePath.split('/');
-    let current: Record<string, TreeNode> = tree;
-
-    for (let i = 0; i < parts.length - 1; i++) {
-      const folderName = parts[i];
-      const folderPath = parts.slice(0, i + 1).join('/');
-      if (!current[folderName]) {
-        current[folderName] = {
-          type: 'folder',
-          path: folderPath,
-          name: folderName,
-          children: [],
-        };
-      }
-      const node = current[folderName];
-      if (node.t-ype === 'folder') {
-        // Rebuild children map
-        const childMap: Record<string, TreeNode> = {};
-        node.children.forEach((c) => { childMap[c.name] = c; });
-        current = childMap;
-      }
-    }
-
-    const fileName = parts[parts.length - 1];
-    current[fileName] = {
-      type: 'file',
-      path: filePath,
-      name: fileName,
-    };
-  });
-
-  function convertObj(obj: Record<string, TreeNode>): TreeNode[] {
-    return Object.values(obj).map((node) => {
-      if (node.type === 'folder') {
-        return node;
-      }
-      return node;
-    });
-  }
-
-  return convertObj(tree);
-}
-
 // Actually build the tree properly with nested folders
 function buildTreeProperly(files: Record<string, string>): TreeNode[] {
   interface FolderNode {
@@ -260,15 +213,6 @@ export default function WorkspaceFiles({ onOpenFileModal, onOpenContextModal }: 
 
   function handleAddFileToFolder(folderPath: string) {
     onOpenFileModal(folderPath);
-  }
-
-  function getDefaultContent(fileName: string): string {
-    if (fileName.endsWith('.md'))
-      return `# ${fileName.replace('.md', '').replace(/[_-]/g, ' ')}\n\nYour content here...`;
-    if (fileName.endsWith('.json')) return '{\n  "name": "new-file",\n  "version": "1.0.0"\n}';
-    if (fileName.endsWith('.yaml') || fileName.endsWith('.yml'))
-      return 'name: new-file\nversion: 1.0.0\n';
-    return '# New file\n\nContent goes here...';
   }
 
   const treeNodes = buildTreeProperly(files);

@@ -55,6 +55,7 @@ export interface RuleItem {
   name: string;
   slug?: string;
   display_name?: string;
+  type?: string;
   tags?: string[];
   rulesets?: string[];
 }

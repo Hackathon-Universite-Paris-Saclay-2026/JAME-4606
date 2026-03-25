@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useWorkspace } from '../context/WorkspaceContext';
 import Navbar from '../components/Navbar';
 import Workspace from '../components/Workspace';
@@ -7,7 +6,6 @@ import FileModal from '../components/FileModal';
 import ContextModal from '../components/ContextModal';
 
 export default function WorkspacePage() {
-  const navigate = useNavigate();
   const [fileModalOpen, setFileModalOpen] = useState(false);
   const [fileModalBasePath, setFileModalBasePath] = useState('');
   const [contextModalOpen, setContextModalOpen] = useState(false);

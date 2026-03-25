@@ -6,12 +6,9 @@ import React, {
   useEffect,
 } from 'react';
 import type {
-  FileMap,
   ActionStates,
-  AgentMappings,
   WorkspaceStateData,
   HistorySnapshot,
-  Context,
   ContextMap,
 } from '../types';
 
@@ -77,7 +74,7 @@ function serializeState(contextId: string, state: WorkspaceStateData): string {
   });
 }
 
-function deserializeState(contextId: string, raw: string | null): WorkspaceStateData {
+function deserializeState(_contextId: string, raw: string | null): WorkspaceStateData {
   if (!raw) return initEmpty();
   try {
     const parsed = JSON.parse(raw);
