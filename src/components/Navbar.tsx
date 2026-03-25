@@ -13,7 +13,7 @@ export default function Navbar() {
           </div>
           <nav className="flex items-center gap-2 sm:gap-3">
             <a
-              href="/doc"
+              href="https://github.com/Hackathon-Universite-Paris-Saclay-2026/JAME?tab=readme-ov-file#jame--multi-agent-software-factory"
               className="text-black border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] font-semibold hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] active:translate-x-[1px] active:translate-y-[1px] transition-all px-2 py-1.5 sm:px-3 text-xs sm:text-sm"
               style={{ backgroundColor: '#a7cefd' }}
             >

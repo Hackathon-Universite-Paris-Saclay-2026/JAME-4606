@@ -13,9 +13,8 @@ export default function Hero() {
       </p>
       <div className="flex flex-wrap justify-center gap-4 relative z-10">
         <a
-          href="https://marketplace.visualstudio.com/items?itemName=JAME.jame-agents"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/jame-workflow-extension-0.0.1.vsix"
+          download="jame-workflow-extension-0.0.1.vsix"
           className="inline-flex items-center gap-2 text-black border-2 border-black font-bold px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] transition-all text-base"
           style={{ backgroundColor: '#a7cefd' }}
         >
